@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="web-design.css">
+        <title>Web Design</title>
+
+    </head>
+    <body>
+        <header>
+            <div class="navWrapper" id="home">
+                <div class=" clearfix">
+                    <h2 class="companyName">SAADIQ's AUTO</h2>
+                    <nav class="mainNav clearfix">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#work" class="smoothScroll">News Feed</a></li>
+                            <li><a href="#about" class="smoothScroll">Users</a></li>
+                            <li><a href="#contact" class="smoothScroll">Admin</a></li>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <h2 style="text-shadow: 3px 3px black;color: lavender;" >
+                    Only Choose The Best.私たちは最高です</h2>
+            </div>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#add">Add Employee</button>
+            <div class="modal" id="add">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">New Employee</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lname"><br>
+                                <label for="email">Email:</label><br>
+                                <input type="text" id="email" name="email"><br>
+                                <label for="cellnum">Cell number:</label><br>
+                                <input type="text" id="cellnum" name="cellnum"><br>
+                                <label for="lndline">Landline:</label><br>
+                                <input type="text" id="lndline" name="lndline">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2>Employee Profiles</h2>
+            <ul class="cards">
+                <li class="cards__item">
+                    <div class="card">
+                      <div class="card__image card__image--river"></div>
+                      <div class="card__content">
+                        <div class="card__title">Saadiq Ryklief</div>
+                        <p class="card__text">
+                            <p>Email: saadiqcode@gmail.com</p>
+                            <p>Cell no: 0815037689</p>
+                            <p>Landline: 0217065419</p>
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#wer">Additional info</button>
+                          <div class="modal" id="wer">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title">Additional Info</h5>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p><br>Home address: 15 ,Dien Str ,Grassy Park ,Cape Town<br>
+                                            Next of kin name: Kehlani<br>
+                                            Next of relationship: Mother<br>
+                                            Next of kin contact details:<br>
+                                            &emsp;Cell no: 0815033087<br>
+                                            &emsp;Email: kehlani@gmail.com</p>
+                                              <button type="button" 
+                                              class="btn btn-danger"
+                                               data-toggle="modal"
+                                                data-target="#dltPr">
+                                                Delete Profile
+                                              </button>
+                                              <div class="modal" id="dltPr">
+                                                  <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                          <div class="modal-header">
+                                                              <h5 class="modal-title">Delete Profile</h5>
+                                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                          </div>
+                                                          <div class="modal-body">
+                                                              <p>Profile has been deleted.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                  </li>
+                <li class="cards__item">
+                  <div class="card">
+                    <div class="card__image card__image--river"></div>
+                    <div class="card__content">
+                      <div class="card__title">Aaqiel Berhardien</div>
+                      <p class="card__text">
+                        <p>Email: aaqiel.code@gmail.com</p>
+                        <p>Cell no: 0819604773</p>
+                        <p>Landline: 0216725689</p>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#qwe">Additional info</button>
+                        <div class="modal" id="qwe">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Additional info</h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <br>Home address: 23 ,11th Avenue ,Landsdown ,Cape Town<br>
+                                            Next of kin name: Beyonce<br>
+                                            Next of relationship: Mother<br>
+                                            Next of kin contact details:<br>
+                                            &emsp;Cell no: 0936274968<br>
+                                            &emsp;Email: beyonce@gmail.com</p>
+                                            <button type="button" 
+                                            class="btn btn-danger"
+                                             data-toggle="modal"
+                                              data-target="#dltPr">
+                                              Delete Profile
+                                            </button>
+                                            <div class="modal" id="dltPr">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Delete Profile</h5>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>Profile has been deleted.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </li>
+                <li class="cards__item">
+                    <div class="card">
+                      <div class="card__image card__image--river"></div>
+                      <div class="card__content">
+                        <div class="card__title">Zan Hendricks</div>
+                        <p class="card__text">
+                            <p>Email: zanhendric@gmail.com</p>
+                            <p>Cell no: 0716473009</p>
+                            <p>Landline: 0214536785</p>
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#poi">Additional info</button>
+                          <div class="modal" id="poi">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title">Additional info</h5>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p><br>Home address: 78 ,Melville ,Sea Wings ,Cape Town<br>
+                                            Next of kin name: Brittany<br>
+                                            Next of relationship: Mother<br>
+                                            Next of kin contact details:<br>
+                                            &emsp;Cell no: 0826574893<br>
+                                            &emsp;Email: bitts@gmail.com</p>
+                                              <button type="button" 
+                                              class="btn btn-danger"
+                                               data-toggle="modal"
+                                                data-target="#dltPr">
+                                                Delete Profile
+                                              </button>
+                                              <div class="modal" id="dltPr">
+                                                  <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                          <div class="modal-header">
+                                                              <h5 class="modal-title">Delete Profile</h5>
+                                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                          </div>
+                                                          <div class="modal-body">
+                                                              <p>Profile has been deleted.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                  </li>
+                  <li class="cards__item">
+                    <div class="card">
+                      <div class="card__image card__image--river"></div>
+                      <div class="card__content">
+                        <div class="card__title">Sergio Pillay</div>
+                        <p class="card__text">
+                            <p>Email: sergiocode@gmail.com</p>
+                            <p>Cell no: 0817689953</p>
+                            <p>Landline: 0210094638</p>
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#drr">Additional info</button>
+                          <div class="modal" id="drr">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title">Additional info</h5>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p><br>Home address: 23 ,11th Avenue ,Retreat ,Cape Town<br>
+                                            Next of kin name: Selena<br>
+                                            Next of relationship: Mother<br>
+                                            Next of kin contact details:<br>
+                                            &emsp;Cell no: 0836890546<br>
+                                            &emsp;Email: selena@gmail.com</p>
+                                              <button type="button" 
+                                              class="btn btn-danger"
+                                               data-toggle="modal"
+                                                data-target="#dltPr">
+                                                Delete Profile
+                                              </button>
+                                              <div class="modal" id="dltPr">
+                                                  <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                          <div class="modal-header">
+                                                              <h5 class="modal-title">Delete Profile</h5>
+                                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                          </div>
+                                                          <div class="modal-body">
+                                                              <p>Profile has been deleted.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </div>
+                              </div>   
+                          </div>
+                    </div>
+                  </li>
+              </ul>
+        </main>
+        <footer>
+            <br><p>2019-2020 All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
